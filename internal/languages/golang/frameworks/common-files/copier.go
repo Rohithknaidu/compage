@@ -226,3 +226,7 @@ func (c Copier) CreateCommonFiles() error {
 
 	return executor.Execute(filePaths, c.Data)
 }
+filePaths = append(filePaths, &targetUsefulCommandsFileName)
+
+return executor.Execute(filePaths, c.Data)
+
